@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @employee_database %>
+
+<div>
+  <%= link_to "Edit this employee database", edit_employee_database_path(@employee_database) %> |
+  <%= link_to "Back to employee databases", employee_databases_path %>
+
+  <%= button_to "Destroy this employee database", @employee_database, method: :delete %>
+</div>
